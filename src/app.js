@@ -45,7 +45,7 @@ app.get("/*", (req,res)=>
     });
 });
 
-app.listen(8000,"127.0.0.1",()=>
+app.listen(port,"127.0.0.1",()=>
 {
     console.log(`Server is listening at Port no ${port}`);
 });
