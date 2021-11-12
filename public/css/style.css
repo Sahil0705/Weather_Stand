@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga:wght@900&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+#menu
+{
+    font-family: "Bubblegum Sans";
+    font-size: 22px;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.row
+{
+    margin:0;
+}
+
+.main_menu
+{
+    background-color: var(--main-bg);
+}
+
+.navbar
+{
+    color:#ffffff;
+    background-color: var(--main-bg);  
+    padding: 2rem 0; 
+}
+
+#m1
+{
+    font-family: "Calistoga";
+    font-size: 20px;
+}
+
+.navbar a
+{
+    color:#ffffff;
+    font-size: 1.8rem;
+}
+
+.navbar li
+{
+    margin-left: 2rem;
+}
+
+.navbar a:hover
+{
+    color:var(--main-color);
+}
+
+.navbar-toggler
+{
+    background-color: white;
+}
+
+.fa-snowflake
+{
+    transition:all linear;
+    animation:rot 2s linear infinite;
+    color:var(--main-color);
+}
+
+@keyframes rot
+{
+    0%
+    {
+        transform:rotate(0deg);
+    }
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
+
+/* main header */
+
+.main_header_left
+{
+    height:70rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_left p
+{
+    font-size: 2rem;
+}
+
+.main_header_left h1
+{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+.main_header_left .text_color
+{
+    color:var(--main-color);
+}
+
+.main_header_left button
+{
+    border:none;
+    padding:0.8rem 1.8rem;
+    font-size:1.4rem;
+    border-radius:2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000000;
+    outline: none;
+}
+
+.main_header_left button:hover
+{
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main_header_right
+{
+    height:70rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main_header_right figure img
+{
+    filter:drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+/* footer code */
+
+footer
+{
+    width:100%;
+    background-color: var(--main-bg);
+    margin-top:auto;
+}
+
+footer p{
+    margin:0;
+    text-align: center;
+    color:#ffffff;
+    line-height: 5rem;
+    font-size: 1.4rem; 
+}
+
+/* temp details show here */ 
+
+#temp
+{
+    font-family: "Itim";
+    font-size: 20px;
+}
+
+
+
+.temp_form
+{
+    width:60%;
+    position: relative;
+    margin:5rem auto;
+    /* top:3rem; */
+}
+
+
+
+
+
+.temp_form input[type="text"]
+{
+    width:100%;
+    padding:2rem 5rem 2rem 2rem;
+    background: #1e202b;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.7rem;
+    border-radius: 3rem;   
+}
+
+::placeholder /*pseudo element*/
+{
+    color:#bfc1c8;
+}
+
+.temp_form input[type="submit"]
+{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    bottom: 5px;
+    border: none;
+    background: #009ad8;
+    padding:0 3rem;
+    border-radius: 3rem;
+    color:white;
+    font-size: 1.6rem;
+}
+
+.temp_form input[type="submit"]:hover{
+    color:#009ad8;
+    background-color: #ffffff;
+}
+
+.tempInformation
+{
+    width: 40rem;
+    margin:auto;
+    /* padding-top:4rem; */
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius:1rem;
+    padding:1rem;
+    font-family: "Roboto",sans-serif;
+    margin-bottom: 3rem;
+    /* margin-top:8rem; */
+}
+
+.top_layer
+{
+    width:100%;
+    height: 6rem;
+    background-color: #1e202b;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+#date1,#date2,#date3
+{
+    font-family: "Itim";
+    font-size: 17px;
+}
+
+.top_layer p{
+     color:#ffffff;
+     font-weight:300;
+     padding:2rem;
+     font-size: 1.4rem;
+}
+
+#submit_button
+{
+    font-size: 1.8rem;
+    font-family: "Calistoga";
+}
+
+.main_layer,.extra_Information
+{
+    width:100%;
+    height:80%;
+    display:flex;
+    flex-direction: column;
+    padding:2rem;
+}
+
+.main_layer #city_name, #maxtemp1, #mintemp1, #hum1, #press1, #winsp1, #vis1{
+    padding:1rem 0;
+    color:#bfc1c8;
+    font-weight: 300;
+    font-size: 1.8rem;
+    font-family: "Inknut Antiqua";
+    
+}
+
+#cityName
+{
+    font-family: "Headland One";
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.extra_info
+{
+    padding-left:3rem;
+    color:#bfc1c8;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    padding-top: 1.5rem;
+}
+
+.main_layer .middle_layer
+{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    color:#ffffff;
+}
+
+.main_layer .middle_layer p, .main_layer .middle_layer .fa
+{
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.fa{
+    color:#009ad8;
+}
+
+/* sup
+{
+    font-size: 6rem;
+    margin-top: -2rem;
+} */
+
+.data_hide
+{
+    visibility: hidden;
+    transition:all 0.3s linear;   
+    color:white;
+    /* font-size: 2rem; */
+}
+
+#mintemp,#maxtemp,#hum,#press,#winsp,#vis
+{
+    color: white;
+    font-family: "Itim";
+    font-size: 2.5rem;
+}
+/* responsive code */
+
+@media(max-width:768px) {
+    .main_header_left{
+        height: auto;
+        margin:5rem 0;
+    }
+
+    .main_header_right{
+        height:auto;
+        margin-top:3rem;
+    }
+
+    .about
+    {
+        height:250px;
+        width:450px;
+    }
+    .temp_form
+    {
+        width: auto;
+    }
+
+    .tempInformation
+    {
+        width: auto;
+    }
+    /* .temp_form input[type="submit"],.temp_form input[type="text"]
+    {
+        width: auto;
+    } */
+    .main_layer .middle_layer p, .main_layer .middle_layer .fa
+    {
+        font-size: 4rem;
+        font-weight: 300;
+    }
+    .temp_form input[type="submit"]
+    {
+        padding: 0 1.8rem;
+    }
+    .extra_info
+    {
+        padding-left: 1rem;
+    }
+    #date1,#date2,#date3
+    {
+        font-family: "Itim";
+        font-size: 15px;
+    }
+}
+
+@media(min-width:769px) {
+    .main_header_left{
+        height: auto;
+        margin:5rem 0;
+    }
+
+    .main_header_right{
+        height:auto;
+        margin-top:3rem;
+    }
+
+    .about
+    {
+        height:250px;
+        width:250px;
+    }
+    
+    
+}
+
+#xtra
+{
+    display: none;
+    transition-duration: 2s;
+}
+#more_details
+{
+    border: none;
+    background: #009ad8;
+    padding:0 3rem;
+    height:4rem;
+    border-radius: 3rem;
+    color:white;
+    font-size: 2rem;
+    font-family: "Calistoga";
+    margin-bottom: 1rem;
+    
+}
+
+#tbl
+{
+    align-items: center;
+}
+td {
+    text-align: center;
+  }
+
+#more_details:hover{
+    color:#009ad8;
+    background-color: #ffffff;
+    box-shadow: 5px 10px #888888;
+}

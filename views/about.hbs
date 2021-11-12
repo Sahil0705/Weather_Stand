@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+     {{>links}}
+</head>
+<body>
+    {{>header}}
+    
+    <!--Main Header-->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!--right side div-->
+                    <div class="col-md-6 col-12 main_header_right align-items-center">
+                        <figure>
+                            <img src="images/about.png" class="about" height="400px" width="400px" alt="about image" title="Sahil Donde">
+                        </figure>
+                    </div>
+                    <!--left side div-->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p style="font-family: 'Carter One'; font-size:30px">Welcome to Weather Stand &nbsp;&nbsp; 🙋‍♂️</p>
+                        <h1 style="font-family: 'Fugaz One'; font-size:35px"><br>I am a <span class="text_color">Web Developer</span>, 3rd year B.tech CSE student</h1>
+                        <a href="https://sahil0705.gitlab.io/first-website/" target="_black"><button span id='m1'>About &nbsp; Me</button></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    {{>footer}}
+</body>
+</html>

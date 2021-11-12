@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+
+     {{>links}}
+</head>
+<body>
+    {{>header}}
+    
+    <!--Main Header-->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!--left side div-->
+                    <div class="col-md-12 col-12 main_header_left align-items-center">
+                        <figure>
+                            <img src="images/404_error.jpg" style="margin-top:-20px" class="" height="150px" width="300px" alt="about image" title="Sahil Donde">
+                        </figure>
+                        <p style="font-family: 'Carter One'; font-size:25px"><br>Welcome to Weather Stand &nbsp;&nbsp; 🙋‍♂️</p>
+                        <h1 style="font-family: 'Fugaz One'; font-size:30px; color:red"><br>{{errorMsg}}</h1>
+                        <a href="/"><button id='m1'>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    {{>footer}}
+</body>
+</html>

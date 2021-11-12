@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    {{>links}}
+     
+</head>
+<body>
+    {{>header}}
+    
+    <!--Main Header-->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" id="cityName" placeholder="Enter city name" autocomplete="off">
+                        <input type="submit" value="Search" id="submit_button">
+                    </form>
+                </div>
+
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        {{!-- <p id='date'>WED | OCT 23 | 10:49AM</p> --}}
+                        <p id="date1">Tueday</p>
+                        <p id="date2">13 OCT</p>
+                        <p id="date3">13 OCT</p>
+                    </div>
+                    
+                    <div class="main_layer">
+                        <p id="city_name">Get Output here</p>
+                        <div class="middle_layer data_hide" id='temp'>
+                            <p><span id='temp_val'>0</span> <sup>o</sup><span id='c'>C</span></p>
+                            <p id='temp_status'><i class="fa fa-cloud fa-5x" aria-hidden="true"></i></p>
+                        </div>
+                    </div> 
+                </div>
+                
+                <table id='tbl' border="0" align='center' width="100%">
+                    <tr><td align="center"><button id="more_details">View &nbsp; More &nbsp; Details</button></td></tr>
+                </table>
+                <br/>
+                <div class="tempInformation" id='xtra'>
+                    <div class="extra_info">
+                    <p><span id='maxtemp1'>Max Temp : </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id='maxtemp'>-</span></p>
+                    <p><span id='mintemp1'>Min Temp : </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id='mintemp'>-</span></p>
+                    <p><span id='hum1'>Humidity : </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id='hum'>-</span></p>
+                    <p><span id='press1'>Pressure : </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id='press'>-</span></p>
+                    <p><span id='winsp1'>Wind Speed : </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id='winsp'>-</span></p>
+                    <p><span id='vis1'>Visibility : </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span id='vis'>-</span></p>
+                    </div>
+                </div>
+
+                <div id='p'></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    {{>footer}}
+    
+
+</body>
+</html>
