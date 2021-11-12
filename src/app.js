@@ -41,7 +41,7 @@ app.get("/*", (req,res)=>
 {
     res.render("404_error",
     {
-        errorMsg:"Oops 😖 !! Page not found ❌"
+        errorMsg:"Oops 😖 !! Pages not found ❌"
     });
 });
 
