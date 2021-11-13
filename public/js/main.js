@@ -171,7 +171,14 @@ const getInfo = async(event) =>
         {
             //alert(cityVal);
             // console.log("B4 Hello");
-            let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&appid=ede44d7b6f9e388706d65d398c99e893`;
+            let url = "";
+            if (location.protocol === 'http:') {
+                url = `http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&appid=ede44d7b6f9e388706d65d398c99e893`;
+             } else {
+                url = `https://api.openweathermap.org/data/2.5/weather?q=${cityVal}&appid=ede44d7b6f9e388706d65d398c99e893`;
+             }
+
+            
             const response = await fetch(url);
             //console.log(response);
             const data = await response.json();
