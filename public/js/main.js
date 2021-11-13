@@ -269,6 +269,17 @@ const getInfo = async(event) =>
         }
         catch{
             city_name.innerText =  `Please write the city name properly`;
+            maxtemp.innerHTML = ``;
+
+            mintemp.innerHTML = ``;
+
+            hum.innerHTML = ``;
+                
+            press.innerHTML = ``;
+
+            winsp.innerHTML = ``;
+
+            vis.innerHTML = ``;
             temp.style.visibility = "hidden";
         }
     }
